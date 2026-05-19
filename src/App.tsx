@@ -11,7 +11,7 @@ function App() {
   return (
     <section className="w-full min-h-screen relative overflow-hidden bg-background">
       {/* BACKGROUND LAYER */}
-      <FloatingBlocks />3
+      <FloatingBlocks />
       {/* CONTENT LAYER */}
       <div className="relative z-10">
         <Header />
