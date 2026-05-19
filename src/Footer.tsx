@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Download, Link2, ShieldCheck, Mail } from "lucide-react";
 
 export default function Footer() {
