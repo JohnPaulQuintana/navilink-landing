@@ -44,7 +44,7 @@ export default function FloatingBlocks() {
     },
   ];
 
-  const get = (val) => (typeof val === "object" ? val.base : val);
+  const get = (val: any) => (typeof val === "object" ? val.base : val);
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-10 max-w-full">
