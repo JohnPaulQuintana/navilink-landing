@@ -3,41 +3,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Download } from "lucide-react";
 
 export default function Hero() {
-  const screens = [
-    {
-      image: "/images/img1.jpg",
-      title: "Save Links Instantly",
-      description:
-        "Quickly save websites, tools, and resources into your personal workspace.",
-    },
-    {
-      image: "/images/img2.jpg",
-      title: "Organized Categories",
-      description:
-        "Keep everything clean and easy to find with smart organization.",
-    },
-    {
-      image: "/images/img3.jpg",
-      title: "Beautiful Workspace",
-      description:
-        "Enjoy a clean and distraction-free experience built for focus.",
-    },
-    {
-      image: "/images/img4.jpg",
-      title: "Public Collections",
-      description: "Discover useful collections shared by the community.",
-    },
-    {
-      image: "/images/img5.jpg",
-      title: "Fast Access Anywhere",
-      description: "Access your saved links anytime across your devices.",
-    },
-    {
-      image: "/images/img6.jpg",
-      title: "Minimal Experience",
-      description: "Designed to feel lightweight, modern, and simple to use.",
-    },
-  ];
+  const screens = Array.from({ length: 12 }).map((_, i) => ({
+  image: `/images/img${i + 1}.jpg`,
+  title: [
+    "Save Links Instantly",
+    "Organized Categories",
+    "Beautiful Workspace",
+    "Public Collections",
+    "Fast Access Anywhere",
+    "Minimal Experience",
+    "Smart Search",
+    "Quick Sharing",
+    "Team Collaboration",
+    "Cloud Sync",
+    "Secure Storage",
+    "Dark Mode Ready",
+  ][i],
+  description: [
+    "Quickly save websites, tools, and resources into your personal workspace.",
+    "Keep everything clean and easy to find with smart organization.",
+    "Enjoy a clean and distraction-free experience built for focus.",
+    "Discover useful collections shared by the community.",
+    "Access your saved links anytime across your devices.",
+    "Designed to feel lightweight, modern, and simple to use.",
+    "Find anything instantly with powerful search.",
+    "Share links with others in one click.",
+    "Work together with your team seamlessly.",
+    "Everything is backed up in the cloud automatically.",
+    "Your data is protected with secure encryption.",
+    "Switch to a sleek dark mode anytime.",
+  ][i],
+}));
 
   const [index, setIndex] = useState(0);
 
