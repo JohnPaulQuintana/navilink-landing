@@ -93,7 +93,7 @@ export default function CommunitySection() {
                   w-12 h-12 rounded-xl
                   bg-gradient-to-r from-primary to-secondary
                   flex items-center justify-center text-white
-                  shadow-md
+                  shadow-md shrink-0
                 ">
                   <Icon size={20} />
                 </div>
@@ -130,7 +130,7 @@ export default function CommunitySection() {
         {/* FINAL MESSAGE */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/70 border border-white/40 backdrop-blur-xl shadow-glass">
-            <ShieldCheck size={16} className="text-primary" />
+            <ShieldCheck size={16} className="text-primary shrink-0" />
             <span className="text-sm text-text-primary font-medium">
               Secure • Organized • Links-only platform
             </span>

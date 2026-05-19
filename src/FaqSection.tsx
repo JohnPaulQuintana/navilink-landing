@@ -86,7 +86,7 @@ export default function FaqSection() {
                   group p-6 rounded-2xl
                   bg-white/70 border border-white/40
                   backdrop-blur-xl shadow-glass
-                  hover:bg-white/80 transition
+                  hover:bg-white/80 transition shrink-0
                 "
               >
                 <div className="flex items-start gap-4">
@@ -98,7 +98,7 @@ export default function FaqSection() {
                     flex items-center justify-center text-white
                     flex-shrink-0
                   ">
-                    <Icon size={18} />
+                    <Icon size={18} className="shrink-0" />
                   </div>
 
                   {/* TEXT */}
@@ -120,7 +120,7 @@ export default function FaqSection() {
         {/* TRUST FOOTER */}
         <div className="mt-14 text-center">
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/70 border border-white/40 shadow-glass backdrop-blur-xl">
-            <ShieldCheck size={16} className="text-primary" />
+            <ShieldCheck size={16} className="text-primary shrink-0" />
             <span className="text-sm text-text-primary font-medium">
               Secure • OTP Protected • Links-only Platform • No distractions
             </span>

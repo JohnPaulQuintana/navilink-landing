@@ -100,7 +100,7 @@ export default function FeaturedSection() {
 
           {/* SECURITY BADGE */}
           <div className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/70 border border-white/40 shadow-glass backdrop-blur-xl">
-            <ShieldCheck size={16} className="text-primary" />
+            <ShieldCheck size={16} className="text-primary shrink-0" />
             <span className="text-sm text-text-primary">
               OTP secured • Safe link scanning • Session resume enabled
             </span>
@@ -138,7 +138,7 @@ export default function FeaturedSection() {
                   bg-gradient-to-r from-primary to-secondary
                   flex items-center justify-center
                   text-white shadow-md
-                  group-hover:scale-110 transition
+                  group-hover:scale-110 transition shrink-0
                 ">
                   <Icon size={20} />
                 </div>
